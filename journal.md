@@ -1,9 +1,13 @@
-{% assign doclist = site.data.samplelist.docs | sort: 'title'  %}
-<ol>
-{% for item in doclist %}
-    <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-{% endfor %}
-</ol>
+---
+navbar: true
+---
+<ul>
+    {% for doc in site.docs %}
+      {% if doc.navbar == "true" %}
+        <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+</ul>
 
 # Journal
 
