@@ -4,8 +4,9 @@ navbar: true
 ---
 <ul>
     {% for page in site.pages %}
-      {{page}}
-      <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+      {% if page.navbar == "true" %}
+        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+      {% endif %}
     {% endfor %}
 </ul>
 
