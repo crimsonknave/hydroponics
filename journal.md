@@ -6,7 +6,7 @@ I'll be transcribing my journal here and also adding in notes based on what I've
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="/github-pages-with-jekyll{{ post.url }}">{{ post.title }}</a>
+      <a href="/hydroponics/{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>
