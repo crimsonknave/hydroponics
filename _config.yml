@@ -1,2 +1,2 @@
 theme: jekyll-theme-merlot
-permalink: /hydroponics/:categories/:year/:month/:day/:title:output_ext
+baseurl: /hydroponics

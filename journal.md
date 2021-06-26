@@ -5,7 +5,7 @@ navbar: true
 <ul class="navbar">
     {% for page in site.pages %}
       {% if page.navbar == true %}
-        <li class="navbar-page"><a href="{{ page.url }}">{{ page.title }}</a></li>
+        <li class="navbar-page"><a href="{{site.baseurl}}{{ page.url }}">{{ page.title }}</a></li>
       {% endif %}
     {% endfor %}
 </ul>
@@ -18,7 +18,7 @@ I'll be transcribing my journal here and also adding in notes based on what I've
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="/hydroponics/{{ post.url }}">{{ post.title }}</a>
+      <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>
