@@ -4,7 +4,7 @@ navbar: true
 ---
 <ul>
     {% for page in site.pages %}
-      <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+      <li><a href="{{ page.url }}">{{ page.title }}</a></li>
     {% endfor %}
 </ul>
 
