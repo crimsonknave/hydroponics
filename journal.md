@@ -1,4 +1,5 @@
 ---
+title: Journal
 navbar: true
 ---
 <ul>
