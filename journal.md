@@ -1,3 +1,10 @@
+{% assign doclist = site.data.samplelist.docs | sort: 'title'  %}
+<ol>
+{% for item in doclist %}
+    <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+{% endfor %}
+</ol>
+
 # Journal
 
 I keep a journal where I note down what's going on with the plants. When I change/add water, what's healthy, what's not. 
