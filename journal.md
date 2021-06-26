@@ -2,11 +2,10 @@
 title: Journal
 navbar: true
 ---
-<ul>
+<ul class="navbar">
     {% for page in site.pages %}
-      -{{ page.navbar }}-
       {% if page.navbar == true %}
-        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+        <li class="navbar-page"><a href="{{ page.url }}">{{ page.title }}</a></li>
       {% endif %}
     {% endfor %}
 </ul>
