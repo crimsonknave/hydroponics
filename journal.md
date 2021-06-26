@@ -2,8 +2,8 @@
 navbar: true
 ---
 <ul>
-    {% for doc in site.docs %}
-      {% if doc.navbar == "true" %}
+    {% for page in site.pages %}
+      {% if page.navbar == "true" %}
         <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
       {% endif %}
     {% endfor %}
