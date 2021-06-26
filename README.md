@@ -1,5 +1,13 @@
-### Table of Content
-* [Main Page](https://crimsonknave.github.io/hydroponics/)
-* [Deep Water Culture](/hydroponics/deep_water_culture)
-* [Journal](/hydroponics/journal)
-* [Seedlings](/hydroponics/seedlings)
+---
+title: Main Page
+navbar: true
+---
+<ul class="navbar">
+    {% for page in site.pages %}
+      {% if page.navbar == true %}
+        <li class="navbar-page"><a href="{{ page.url }}">{{ page.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+</ul>
+# Main Page
+Here's where I'll have generic stuff and an intro
