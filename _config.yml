@@ -1,2 +1,16 @@
-theme: jekyll-theme-merlot
+remote_theme: hydecorp/hydejack
 baseurl: /hydroponics
+title: Hydroponics
+
+plugins:
+  - jekyll-remote-theme
+
+# Hydejack config
+accent_image: https://user-images.githubusercontent.com/352979/124195654-df3af800-da98-11eb-9540-3d0671652e60.jpg
+collections:
+  featured_categories:
+    permalink: /:name/
+    output: true
+  featured_tags:
+    permalink: /tag-:name/
+    output: true

@@ -1,13 +1,3 @@
----
-title: Main Page
-navbar: true
----
-<ul class="navbar">
-    {% for page in site.pages %}
-      {% if page.navbar == true %}
-        <li class="navbar-page"><a href="{{site.baseurl}}{{ page.url }}">{{ page.title }}</a></li>
-      {% endif %}
-    {% endfor %}
-</ul>
-# Main Page
-Here's where I'll have generic stuff and an intro
+# Hydroponics
+
+This is a pages site and can be viewed [here](https://crimsonknave.github.io/hydroponics)
