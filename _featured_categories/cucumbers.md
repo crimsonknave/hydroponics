@@ -1,4 +1,0 @@
----
-title: Cucumbers
-layout: list
----

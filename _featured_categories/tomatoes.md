@@ -1,4 +1,0 @@
----
-title: Tomatoes
-layout: list
----
