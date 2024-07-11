@@ -1,0 +1,20 @@
+#!/bin/bash
+
+
+if [ -z "${1}" ]
+then
+  echo "Must pass a date as the first parameter"
+  exit 1
+fi
+date=$1
+title=${2:-"Untitled"}
+categories=${3:-"[]"}
+
+cat > journal/_posts/$date-journal.md << EOF
+---
+layout: post
+title: '$title'
+date: $date
+categories: $categories
+---
+EOF
